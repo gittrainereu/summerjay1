@@ -1,0 +1,1 @@
+Line 1 is better than Zeile 1
