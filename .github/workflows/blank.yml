@@ -21,7 +21,9 @@ jobs:
          cd scripts
          chmod u+x ./deploy.sh
          ./deploy.sh 
+         echo "marke=butter" >> $GITHUB_OUTPUT 
       - name: auswerten
         run: |
            echo "Der Name war: ${{ steps.run_deploy.outputs.vorname }}"
            echo "Der Name war: ${{ steps.run_deploy.outputs.VORNAME }}"
+           echo "Der Name war: ${{ steps.run_deploy.outputs. }}"
