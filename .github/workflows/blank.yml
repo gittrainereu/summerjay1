@@ -26,4 +26,4 @@ jobs:
         run: |
            echo "Der Name war: ${{ steps.run_deploy.outputs.vorname }}"
            echo "Der Name war: ${{ steps.run_deploy.outputs.VORNAME }}"
-           echo "Der Name war: ${{ steps.run_deploy.outputs. }}"
+           echo "Die Marke war: ${{ steps.run_deploy.outputs.marke }}"
