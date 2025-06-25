@@ -15,9 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
-      - name: run deploy 
+      - name: run_deploy 
         shell: bash
         run: |
          cd scripts
          chmod u+x ./deploy.sh
          ./deploy.sh 
+      - name: auswerten
+        run: |
+           echo "Der Name war: ${{ steps.run_deploy.outputs.VORNAME }}"
