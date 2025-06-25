@@ -24,4 +24,4 @@ jobs:
          ./deploy.sh
       - name: auswerten
         run: |
-           echo "Der Name war: ${{ steps.run_deploy.outputs.VORNAME }}"
+           echo "Der Name war: ${{ steps.run_deploy.outputs.vorname }}"
