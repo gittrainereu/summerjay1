@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "🔨 Baue etwas"
+          xecho "🔨 Baue etwas"
           sleep 30 
 
   test:
