@@ -15,15 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
-      - name: run_deploy 
+      - name: run deploy
+        id: run_deploy
         shell: bash
         run: |
          cd scripts
          chmod u+x ./deploy.sh
-         ./deploy.sh 
-         echo "marke=butter" >> $GITHUB_OUTPUT 
+         ./deploy.sh
       - name: auswerten
         run: |
-           echo "Der Name war: ${{ steps.run_deploy.outputs.vorname }}"
            echo "Der Name war: ${{ steps.run_deploy.outputs.VORNAME }}"
-           echo "Die Marke war: ${{ steps.run_deploy.outputs.marke }}"
